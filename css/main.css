@@ -22,6 +22,101 @@ body {
   font-family: "Lexend Deca", sans-serif;
   src: url(../../fonts/Lexend-Deca/SpaceMono-Regular.ttf);
 }
+header {
+  background-image: url(../../imgs/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position-y: 122px;
+}
+@media (max-width: 768px) {
+  header {
+    background-image: url(../../imgs/bg-tablet.jpg);
+  }
+}
+@media (max-width: 576px) {
+  header {
+    background-image: url(../../imgs/bg-mobile.jpg);
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 34px 0 0 34px;
+  background-color: #FFFFFF;
+}
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: row-reverse;
+    width: 60%;
+  }
+}
+.navbar__menu {
+  display: flex;
+  column-gap: 32px;
+  width: 55%;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .navbar__menu {
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .navbar__menu {
+    display: none;
+  }
+}
+.navbar__btn {
+  padding: 14px 39px;
+  background-color: #FCB72B;
+  color: #FFFFFF;
+  border: none;
+  transition: 0.5s ease-out;
+}
+@media (max-width: 576px) {
+  .navbar__btn {
+    display: none;
+  }
+}
+.navbar__btn:hover {
+  border: 1px solid #FCB72B;
+  color: #FCB72B;
+  background-color: #FFFFFF;
+  transform: 0.5s;
+}
+.navbar__item__link {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #939CAA;
+  transition: 0.5 ease;
+}
+@media (max-width: 768px) {
+  .navbar__item__link {
+    column-gap: 32px;
+  }
+}
+.navbar__item__link:hover {
+  color: #000;
+  transform: 0.5s;
+  border: none;
+  font-size: 15.2px;
+  font-weight: 900;
+  border-bottom: 3px solid #FCB72B;
+}
+.navbar__burger {
+  display: none;
+}
+@media (max-width: 576px) {
+  .navbar__burger {
+    display: block;
+  }
+}
+
 @font-face {
   font-family: "Space Mono", monospace;
   src: url(../../fonts/Space-Mono/SpaceMono-Regular.ttf);
