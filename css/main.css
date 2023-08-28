@@ -64,9 +64,21 @@ header {
     justify-content: center;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 576px) and (max-width: 576px) {
   .navbar__menu {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 98px;
+    left: -30px;
+    background-color: #333A44;
+    height: 85vh;
+    max-width: 300px;
+    width: 100%;
+    row-gap: 25px;
+    transform: translateX(-100px);
+    visibility: hidden;
+    transition: 0.5s ease-in;
   }
 }
 .navbar__btn {
@@ -117,6 +129,26 @@ header {
   }
 }
 
+.show {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+@media only screen and (-webkit-min-devace-pixel-ratio: 2), only screen and (min--moz-devace-pixel-ratio: 2), only screen and (-o-min-devace-pixel-ratio: 2/1), only screen and (min-devace-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  header {
+    background-image: url(../../images/desktop-bg-2x.jpg);
+  }
+}
+@media only screen and (-webkit-min-devace-pixel-ratio: 2) and (max-width: 768px), only screen and (min--moz-devace-pixel-ratio: 2) and (max-width: 768px), only screen and (-o-min-devace-pixel-ratio: 2/1) and (max-width: 768px), only screen and (min-devace-pixel-ratio: 2) and (max-width: 768px), only screen and (min-resolution: 192dpi) and (max-width: 768px), only screen and (min-resolution: 2dppx) and (max-width: 768px) {
+  header {
+    background-image: url(../../images/header-tablet-2x.jpg);
+  }
+}
+@media only screen and (-webkit-min-devace-pixel-ratio: 2) and (max-width: 576px), only screen and (min--moz-devace-pixel-ratio: 2) and (max-width: 576px), only screen and (-o-min-devace-pixel-ratio: 2/1) and (max-width: 576px), only screen and (min-devace-pixel-ratio: 2) and (max-width: 576px), only screen and (min-resolution: 192dpi) and (max-width: 576px), only screen and (min-resolution: 2dppx) and (max-width: 576px) {
+  header {
+    background-image: url(../../images/header-phone-2x.jpg);
+  }
+}
 @font-face {
   font-family: "Space Mono", monospace;
   src: url(../../fonts/Space-Mono/SpaceMono-Regular.ttf);
