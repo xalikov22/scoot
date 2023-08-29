@@ -255,6 +255,48 @@ header {
   font-family: "Lexend Deca", sans-serif;
   src: url(../../fonts/Lexend-Deca/SpaceMono-Regular.ttf);
 }
+.block {
+  background-image: url(../../icons/liner.svg);
+  margin-top: 160px;
+  background-repeat: no-repeat;
+  background-position-y: 45px;
+  background-position-x: -6px;
+}
+@media (max-width: 768px) {
+  .block {
+    margin-top: 0;
+    background-image: none;
+  }
+}
+
+.main {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+.main__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.0714285374px;
+  text-align: left;
+  max-width: 350px;
+  width: 100%;
+  padding-top: 40px;
+  color: #495567;
+}
+.main__text {
+  max-width: 350px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 27px;
+  color: #939CAA;
+}
+
 .container {
   max-width: 1166px;
   width: 100%;
