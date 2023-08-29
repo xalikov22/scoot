@@ -1,0 +1,94 @@
+.card__info {
+    margin-top: 122px;
+    background-image: url(../../images/icons/tire.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 40px;
+    background-position-x: -580px;
+    @include for-tablet {
+        background-image: none;
+        margin-top: 0;
+        background-image: url(../../images/icons/tire-y.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: 160px;
+        background-position-y: -30px;
+    }
+    @include for-phone {
+        background-image: none;
+    }
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    @include for-tablet {
+        display: flex;
+        flex-direction: column;
+        padding-top: 132px;
+        row-gap: 74px;
+    }
+    @include for-phone {
+        display: flex;
+        flex-direction: column;
+        row-gap: 48px;
+    }
+    &__item {
+        @include for-tablet {
+            display: flex;
+            align-items: center;
+            column-gap: 79px;
+            row-gap: 40px;
+        }
+        @include for-phone {
+            display: flex;
+            flex-direction: column;
+        }
+        &__span {
+            display: inline-block;
+            padding-top: 40px;
+        }
+        &__title {
+            max-width: 350px;
+            width: 100%;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.07px;
+            color: $title_color;
+            @include for-tablet {
+                max-width: 398px;
+                width: 100%;
+                text-align: center;
+            }
+            @include for-phone {
+                font-size: 20px;
+                letter-spacing: -0.89px;
+                color: $title_color;
+                text-align: center;
+                margin-top: -30px;
+            }
+        }
+        &__text {
+            max-width: 340px;
+            width: 100%;
+            font-family: $text_font;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: $link_color;
+            padding-top: 24px;
+            @include for-phone {
+                text-align: center;
+                margin-top: 24px;
+                margin-bottom: 48px;
+            }
+        }
+        &__img {
+            @include for-tablet {
+                margin-top: 40px;
+            }
+        }
+    }
+}

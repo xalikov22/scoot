@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Scoot</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -13,60 +13,184 @@
         <nav>
             <div class="container">
                 <div class="navbar">
-                    <a href="./index.html"> <img class="navbar__img" src="./icons/scoot.svg" alt="icon"></a>
+                    <a href="./index.html">
+                        <img class="navbar__logo" src="./images/icons/scoot-logo.svg" alt="scoot">
+                    </a>
                     <ul class="navbar__menu">
-                        <span class="navbar__menu__span">
-                            <li class="navbar__item"><a class="navbar__item__link" href="#">About</a></li>
-                            <li class="navbar__item"><a class="navbar__item__link" href="#">Location</a></li>
-                            <li class="navbar__item"><a class="navbar__item__link" href="#">Careers</a></li>
+                        <span class="navbar__menu__items">
+                            <li class="navbar__menu__item">
+                                <a class="navbar__menu__link" href="#">About</a>
+                            </li>
+                            <li class="navbar__menu__item">
+                                <a class="navbar__menu__link" href="#">Location</a>
+                            </li>
+                            <li class="navbar__menu__item">
+                                <a class="navbar__menu__link" href="#">Careers</a>
+                            </li>
                         </span>
-                        <button class="navbar__btn navbar__btn2">Get Scootin</button>
+                        <button class="navbar__menu__link__btn">
+                            Get Scootin
+                        </button>
                     </ul>
-                    <button class="navbar__btn">Get Scootin</button>
-                    <img class="navbar__burger" src="./icons/gm_burger.svg" alt="burger">
-                    <img class="navbar__remove" src="./icons/kres.svg" alt="kres">
+                    <button class="navbar__menu__btn">
+                        Get Scootin
+                    </button>
+                    <img class="navbar__burger" src="./images/icons/add__btn.svg" alt="burger">
+                    <img class="navbar__remove" src="./images/icons/remove__btn.svg" alt="remove">
                 </div>
             </div>
         </nav>
         <div class="container">
-            <div class="chapter">
-                <h1 class="chapter__title">Scooter sharing made simple</h1>
-                <p class="chapter__text">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
-                <button class="navbar__btn chapter__btn">Get Scootin</button>
-
+            <div class="hero">
+                <h1 class="hero__title">Scooter sharing made simple</h1>
+                <div class="hero__top">
+                    <p class="hero__text">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
+                    <button class="hero__btn">Get Scootin</button>
+                </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="block">
+        <section class="card__info">
             <div class="container">
-                <div class="main">
-                    <div class="main__menu">
-                        <img class="main__img" src="./icons/phone.svg" alt="phone">
-                        <div class="main__item">
-                            <h3 class="main__title">Locate with app</h3>
-                            <p class="main__text">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
-                        </div>
+                <div class="card">
+                    <div class="card__item">
+                        <img class="card__item__img" src="./images/icons/card-tel.svg" alt="card icon">
+                        <span class="card__item__span">
+                            <h3 class="card__item__title">Locate with app</h3>
+                            <p class="card__item__text">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
+                        </span>
                     </div>
-                    <div class="main__menu">
-                        <img class="main__img" src="./icons/motobike.svg" alt="motobike">
-                        <div class="main__item">
-                            <h3 class="main__title">Pick your scooter</h3>
-                            <p class="main__text">We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost. </p>
-                        </div>
+                    <div class="card__item">
+                        <img class="card__item__img" src="./images/icons/card-moto.svg" alt="card icon">
+                        <span class="card__item__span">
+                            <h3 class="card__item__title">Pick your scooter</h3>
+                            <p class="card__item__text">We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost. </p>
+                        </span>
                     </div>
-                    <div class="main__menu">
-                        <img class="main__img" src="./icons/manbake.svg" alt="manbike">
-                        <div class="main__item">
-                            <h3 class="main__title">Enjoy the ride</h3>
-                            <p class="main__text">Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps. </p>
-                        </div>
+                    <div class="card__item">
+                        <img class="card__item__img" src="./images/icons/card-das.svg" alt="card icon">
+                        <span class="card__item__span">
+                            <h3 class="card__item__title">Enjoy the ride</h3>
+                            <p class="card__item__text">Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps. </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="telemetry__info">
+            <div class="container">
+                <div class="telemetry">
+                    <div class="telemetry__right">
+                        <h2 class="telemetry__right__title">Easy to use riding telemetry</h2>
+                        <p class="telemetry__right__text">The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.</p>
+                        <button class="navbar__menu__btn telemetry__right__btn">Learn More</button>
+                    </div>
+                    <div class="telemetry__left">
+                        <img class="telemetry__left__img" src="./images/tel-img.jpg" alt="tel">
+                        <img class="telemetry__left__str" src="./images/icons/tel-str.svg" alt="strelka1">
+                    </div>
+                </div>
+            </div>
+            <img class="telemetry__info__image" src="./images/Mask.png" alt="mask">
+        </section>
+        <section class="about__info">
+            <div class="container">
+                <div class="about">
+                    <div class="about__left">
+                        <img class="about__left__img" src="./images/about-img.jpg" alt="about">
+                        <img class="about__left__str" src="./images/icons/about-str.svg" alt="strelka2">
+                    </div>
+                    <div class="about__right">
+                        <h2 class="about__right__title">Coming to a city near you</h2>
+                        <p class="about__right__text">Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year.</p>
+                        <button class="navbar__menu__btn about__right__btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <img class="about__info__image" src="./images/Mask-about.png" alt="mask">
+        </section>
+        <section class="zero__info">
+            <div class="container">
+                <div class="zero">
+                    <div class="zero__right">
+                        <h2 class="zero__right__title">Zero hassle payments</h2>
+                        <p class="zero__right__text">Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.</p>
+                        <button class="navbar__menu__btn zero__right__btn">Learn More</button>
+                    </div>
+                    <div class="zero__left">
+                        <img class="zero__left__img" src="./images/zero-img.jpg" alt="zero">
+                        <img class="zero__left__str" src="./images/icons/tel-str.svg" alt="strelka">
+                    </div>
+                </div>
+            </div>
+            <img class="zero__info__image" src="./images/Mask.png" alt="mask">
+        </section>
+
+    </main>
+    <footer>
+        <div class="footerback">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <h2 class="footer__titile">
+                        Sign up and Scoot off today
+                    </h2>
+
+                    <div class="footer__icons__wrapp">
+                        <a href="https://www.apple.com">
+                            <div class="footer__local ">
+                                <div class="footer__local__img">
+                                    <img src="./images/icons/apple.svg" alt=" apple"> </div>
+                                <div class="apps__titile">
+                                    <p class="footer__appstory">Available on the</p>
+                                    <p class="footer__app">AppStore</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://play.google.com">
+                            <div class="footer__local">
+                                <div class="footer__local__img">
+                                    <img src="./images/icons/play-market.svg" alt="playmk">
+                                </div>
+
+
+                                <div class="apps__titile">
+                                    <p class="footer__appstory">Available on the</p>
+                                    <p class="footer__app">AppStore</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
 
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+        <div class="footer__menu__wrapper">
+            <div class="footer__menu__list">
+                <div class="foter__menu">
+                    <img src="./images/icons/scoot-logo.svg" alt="footerlogo">
+                    <ul class="footer__ul">
+                        <li class="footer__ul__list">
+                            <a href="#" class="footer__link">About</a>
+                        </li>
+                        <li class="footer__ul__list">
+                            <a href="#" class="footer__link">Location</a>
+                        </li>
+                        <li class="footer__ul__list">
+                            <a href="#" class="footer__link">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <a href="https://www.fa-facebook"><i class="fab fa-facebook "></i>
+                    </a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"> <i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
     <script>
         const btn = document.querySelector('.navbar__burger');
         const menu = document.querySelector('.navbar__menu');
@@ -81,6 +205,7 @@
             menu.classList.remove('show');
             remove__btn.style.display = 'none';
             btn.style.display = 'block';
+
         })
     </script>
 </body>

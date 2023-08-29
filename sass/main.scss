@@ -10,20 +10,22 @@ html {
 }
 
 body {
-    overflow-x: hidden;
     font-family: 'Space Mono', monospace;
 }
 
-@import './blocks/variables';
+@import './blocks/varibles';
 @import './blocks/mixins';
 @import './blocks/fonts';
-@import './blocks/header';
-@import './blocks/footer';
-@import './blocks/fonts';
-@import './blocks/section';
 .container {
     max-width: 1166px;
     width: 100%;
     margin: 0 auto;
     padding: 0 30px;
 }
+
+@import './blocks/header';
+@import './blocks/midle';
+@import './blocks/about';
+@import './blocks/hero';
+@import './blocks/tech';
+@import './blocks/footer';
