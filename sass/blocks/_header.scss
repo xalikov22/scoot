@@ -111,7 +111,7 @@ nav {
     padding: 22px 0 21px 0;
     @include for-phone {
         flex-direction: row-reverse;
-        width: 70%;
+        width: 30%;
     }
     &__logo {
         @include for-phone {
