@@ -791,28 +791,10 @@ footer {
   }
 }
 
-.icon {
-  background-color: red;
-  width: 159px;
-  height: 56px;
-}
-
-.iconimg {
-  align-items: center;
-  padding: 20px 0 24px 16px;
-}
-
-.boxsmol {
-  color: #fff;
-  font-size: 12px;
-  margin-left: 34px;
-  padding: -48px;
-}
-
 .boxbig {
   color: #fff;
   font-size: 22px;
-  padding-left: 37px;
+  margin: 37px;
 }
 
 .footer2 {
